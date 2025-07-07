@@ -1,0 +1,52 @@
+### General ###
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.iml
+
+### Maven ###
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+### Gradle ###
+build/
+.gradle/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Application Config ###
+application.properties
+application.yml
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse / STS ###
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### OS / Misc ###
+.DS_Store
+Thumbs.db
