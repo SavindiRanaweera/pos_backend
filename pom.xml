@@ -30,7 +30,16 @@
 	<modules>
 		<module>customer-service</module>
 		<module>supplier-service</module>
+		<module>creditSettle-service</module>
+		<module>grn-service</module>
+		<module>staff-service</module>
+		<module>invoice-service</module>
+		<module>supplierPayment-service</module>
+		<module>priceUpdate-service</module>
+		<module>itemMaster-service</module>
+		<module>order-service</module>
 	</modules>
+
 	<properties>
 		<java.version>21</java.version>
 	</properties>
