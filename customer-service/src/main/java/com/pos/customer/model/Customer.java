@@ -1,11 +1,21 @@
 package com.pos.customer.model;
 
+import com.fasterxml.jackson.annotation.JsonAnySetter;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Document(collection = "customers")
 public class Customer {
     @Id
@@ -22,32 +32,6 @@ public class Customer {
 
     private String customer_group;
 
-    // Constructors
-    public Customer() {}
-
-    public Customer(String customer_code, String name, String address, String contact, String customer_group) {
-        this.customer_code = customer_code;
-        this.name = name;
-        this.address = address;
-        this.contact = contact;
-        this.customer_group = customer_group;
-    }
-
-    // Getters and Setters
-    public String getCustomer_code() { return customer_code; }
-    public void setCustomer_code(String customer_code) { this.customer_code = customer_code; }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-
-    public String getAddress() { return address; }
-    public void setAddress(String address) { this.address = address; }
-
-    public String getContact() { return contact; }
-    public void setContact(String contact) { this.contact = contact; }
-
-    public String getCustomer_group() { return customer_group; }
-    public void setCustomer_group(String customer_group) { this.customer_group = customer_group; }
 
     @Override
     public String toString() {
